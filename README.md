@@ -78,6 +78,8 @@ The site is published by GitHub Pages through the workflow in `.github/workflows
 
 These are unofficial, free and non-profit fan projects. They have no connection with the authors, studios, publishers or other rights holders of the works, and are not endorsed by them. All the works, names, characters and places mentioned belong to their respective authors and rights holders. No excerpts from the works are reproduced.
 
-## Copyright
+## License
 
-Copyright © 2026 GrandArchives
+Released under the [MIT License](LICENSE). Copyright © 2026 GrandArchives.
+
+The license covers the code and the original texts, map, organization and design of this project. The works, names, characters, places and trademarks it mentions belong to their respective authors and rights holders and are not covered by it; see the [disclaimer](#disclaimer).

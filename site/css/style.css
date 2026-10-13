@@ -1,0 +1,80 @@
+/* GrandArchives hub: all styles (language-independent). Palette from the org logo: petrol #12414A, cream #F1EBDD. */
+:root{
+  --petrol:#12414A; --cream:#F1EBDD;
+  --bg:#f1ebdd; --surface:#faf6ec; --ink:#12414a; --muted:#3f5c62; --line:#d8cfba; --shadow:rgba(18,65,74,.16);
+  --focus:#12414a;
+  --display:"Gloock",Georgia,"Times New Roman",serif;
+  --body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0b2a30; --surface:#103840; --ink:#f1ebdd; --muted:#b6c6c3; --line:#25535c; --shadow:rgba(0,0,0,.4);
+    --focus:#f1ebdd;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0b2a30; --surface:#103840; --ink:#f1ebdd; --muted:#b6c6c3; --line:#25535c; --shadow:rgba(0,0,0,.4);
+  --focus:#f1ebdd;
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55}
+[hidden]{display:none!important}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+
+.wrap{max-width:1040px;margin:0 auto;padding:max(16px,env(safe-area-inset-top)) max(20px,env(safe-area-inset-right)) max(40px,env(safe-area-inset-bottom)) max(20px,env(safe-area-inset-left))}
+
+/* language selector: discreet, top right, always visible */
+.langbar{display:flex;justify-content:flex-end;margin-bottom:24px}
+.langbar:empty{display:none}
+.langsel{font:inherit;font-size:.82rem;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:999px;padding:4px 12px;max-width:100%;cursor:pointer}
+.langsel:hover{border-color:var(--ink);color:var(--ink)}
+
+/* header */
+.hero{display:flex;align-items:center;gap:16px;margin-bottom:28px}
+.mark{flex:none;width:56px;height:56px;border-radius:14px;display:block}
+.hero-text{min-width:0}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(2rem,6vw,3.1rem);line-height:1.05;margin:0;overflow-wrap:anywhere}
+.tagline{margin:6px 0 0;color:var(--muted);font-size:1.05rem;text-wrap:balance}
+
+.eyebrow{margin:0 0 8px;font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.about{max-width:46rem;padding-top:22px;border-top:1px solid var(--line);margin-bottom:40px}
+.about p{margin:0;font-size:1.05rem}
+
+/* cards */
+.cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr;gap:16px}
+@media (min-width:640px){.cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}}
+.cards>li{display:flex;min-width:0}
+.card{--a:var(--c1,var(--ink));--a2:var(--c2,var(--a));position:relative;display:flex;flex-direction:column;gap:8px;width:100%;padding:24px 22px 22px;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;text-decoration:none;color:var(--ink);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.card::before{content:"";position:absolute;inset:0 0 auto 0;height:6px;background:linear-gradient(90deg,var(--a) 0 50%,var(--a2) 50% 100%)}
+.card-title{margin:0;font-family:var(--display);font-weight:400;font-size:1.4rem;line-height:1.15;text-wrap:balance}
+.card-desc{margin:0;color:var(--muted);font-size:.98rem;flex:1}
+.card::after{content:"\2192";align-self:flex-end;color:var(--a);font-size:1.25rem;line-height:1;margin-top:4px;transition:transform .18s ease}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 24px var(--shadow);border-color:var(--a)}
+.card:hover::after{transform:translateX(4px)}
+.card:focus-visible{outline-offset:4px;border-radius:12px}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .card{--a:var(--c1d,var(--c1,var(--ink)));--a2:var(--c2d,var(--c2,var(--a)))}
+}
+:root[data-theme="dark"] .card{--a:var(--c1d,var(--c1,var(--ink)));--a2:var(--c2d,var(--c2,var(--a)))}
+
+/* footer */
+.foot{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);max-width:52rem;font-size:.86rem;color:var(--muted)}
+.foot p{margin:0 0 8px}
+.foot strong{color:var(--ink)}
+
+@media (max-width:420px){
+  .hero{gap:12px}
+  .mark{width:48px;height:48px;border-radius:12px}
+  .card{padding:22px 18px 18px}
+}
+@media (prefers-reduced-motion: reduce){
+  .card,.card::after{transition:none}
+  .card:hover{transform:none}
+  .card:hover::after{transform:none}
+}

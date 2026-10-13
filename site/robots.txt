@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://grand-archives.github.io/sitemap.xml
+Sitemap: https://grand-archives.github.io/stephen-king/sitemap.xml
+Sitemap: https://grand-archives.github.io/middle-earth/sitemap.xml
+Sitemap: https://grand-archives.github.io/harry-potter/sitemap.xml
+Sitemap: https://grand-archives.github.io/mcu/sitemap.xml

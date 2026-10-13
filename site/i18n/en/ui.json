@@ -1,0 +1,15 @@
+{
+  "lang.label": "Language",
+
+  "brand.name": "GrandArchives",
+  "brand.tagline": "Guides to navigate the great universes of fiction.",
+
+  "about.title": "About",
+  "about.text": "GrandArchives gathers content aggregators about big fiction universes: the stories, the characters, the places and the connections between them, organized in one place and easy to browse. No ads. Every source consulted is credited on each site.",
+
+  "guides.title": "The guides",
+  "card.aria": "Open the guide: {title}",
+
+  "footer.copyright": "<strong>© 2026 GrandArchives.</strong> Texts, organization and design of this site.",
+  "footer.notice": "These are unofficial, free and non-profit fan projects. They have no connection with the authors, studios, publishers or other rights holders of the works, and are not endorsed by them. All the works, names, characters and places mentioned belong to their respective authors and rights holders. No excerpts from the works are reproduced."
+}

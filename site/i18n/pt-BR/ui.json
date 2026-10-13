@@ -1,0 +1,15 @@
+{
+  "lang.label": "Idioma",
+
+  "brand.name": "GrandArchives",
+  "brand.tagline": "Guias para navegar pelos grandes universos da ficção.",
+
+  "about.title": "Sobre",
+  "about.text": "A GrandArchives reúne agregadores de conteúdo sobre grandes universos da ficção: as histórias, os personagens, os lugares e as conexões entre eles, organizados num só lugar e fáceis de navegar. Sem anúncios. Todas as fontes consultadas são creditadas em cada site.",
+
+  "guides.title": "Os guias",
+  "card.aria": "Abrir o guia: {title}",
+
+  "footer.copyright": "<strong>© 2026 GrandArchives.</strong> Textos, organização e design deste site.",
+  "footer.notice": "Estes são projetos de fã, não oficiais, gratuitos e sem fins lucrativos. Não têm ligação com os autores, estúdios, editoras ou demais detentores dos direitos das obras, nem são endossados por eles. Todas as obras, nomes, personagens e lugares citados pertencem aos respectivos autores e detentores dos direitos. Nenhum trecho das obras é reproduzido."
+}
